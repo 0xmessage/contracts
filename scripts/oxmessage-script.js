@@ -19,6 +19,8 @@ async function main() {
 
   await oxmessage.deployed();
 
+  console.log('oxmessage: ' + oxmessage.address);
+
   //console.log("Greeter deployed to:", greeter.address);
 }
 

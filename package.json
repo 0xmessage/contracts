@@ -6,8 +6,9 @@
   "scripts": {
     "test": "npx hardhat test",
     "deploy-main": "npx hardhat run scripts/deploy.ts --network mainnet",
-    "deploy-test": "npx hardhat run scripts/deploy.ts --network testnet",
-    "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby"
+    "deploy-test": "npx hardhat run scripts/oxmessage-script.js --network testnet",
+    "deploy-rinkeby": "npx hardhat run scripts/oxmessage-script.js --network rinkeby",
+    "deploy-polygonMumbai": "npx hardhat run scripts/oxmessage-script.js --network polygonMumbai"
   },
   "author": "",
   "license": "ISC",
@@ -17,11 +18,11 @@
     "ethers": "^5.4.7"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-etherscan": "^2.1.6",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.6",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "chai": "^4.3.4",
     "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
     "hardhat": "^2.6.8",
